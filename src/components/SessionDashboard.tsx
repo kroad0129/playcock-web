@@ -289,11 +289,10 @@ export default function SessionDashboard(props: {
                     <span style={S.mono}>
                       {minutesOnlyFromSeconds(restSec)}
                     </span>
-                    {" · "}
-                    경기수{" "}
+                    <div></div>
                     <span style={S.mono}>
-                      남 {p.maleDoubleCount} / 여 {p.femaleDoubleCount} / 혼{" "}
-                      {p.mixedDoubleCount} / 총 {p.totalMatchCount}
+                      총 {p.totalMatchCount} / 남복 {p.maleDoubleCount} / 여복{" "}
+                      {p.femaleDoubleCount} / 혼복 {p.mixedDoubleCount}
                     </span>
                   </div>
                 </div>

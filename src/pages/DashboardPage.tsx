@@ -66,7 +66,7 @@ export default function DashboardPage() {
   }, []);
 
   useEffect(() => {
-    const id = window.setInterval(() => refreshDashboard(), 4000);
+    const id = window.setInterval(() => refreshDashboard(), 5000);
     return () => window.clearInterval(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -440,7 +440,7 @@ const S: Record<string, React.CSSProperties> = {
 
   preWrap: { height: "100%", display: "grid", placeItems: "center" },
   preCard: {
-    width: "min(820px, 100%)",
+    width: "min(500px, 100%)",
     height: "min(76vh, 760px)",
     background: "white",
     border: "1px solid #e8e8ef",
