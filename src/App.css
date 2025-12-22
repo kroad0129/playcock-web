@@ -1,0 +1,9 @@
+/* App.css (대시보드 전용 레이아웃) */
+
+#root {
+  width: 100%;
+  max-width: none; /* ✅ 1280px 제한 제거 */
+  margin: 0;
+  padding: 0; /* ✅ 2rem 제거 */
+  text-align: left; /* ✅ 가운데 정렬 제거 */
+}
