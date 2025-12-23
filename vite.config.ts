@@ -7,21 +7,10 @@ export default defineConfig({
     host: true,
     port: 5173,
     proxy: {
-      "/club-players": {
+      "/api": {
         target: "http://localhost:8080",
         changeOrigin: true,
-      },
-      "/sessions": {
-        target: "http://localhost:8080",
-        changeOrigin: true,
-      },
-      "/waiting-teams": {
-        target: "http://localhost:8080",
-        changeOrigin: true,
-      },
-      "/matches": {
-        target: "http://localhost:8080",
-        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },

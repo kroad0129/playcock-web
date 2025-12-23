@@ -1,6 +1,6 @@
 import type { ClubPlayerResponse, DashboardResponse } from "../types/playcock";
 
-const BASE = "";
+const BASE = "/api";
 
 async function http<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(BASE + url, {
