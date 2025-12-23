@@ -31,12 +31,12 @@ function secondsSince(iso?: string | null) {
 function matchTypeKo(type?: string | null) {
   if (!type) return "경기";
   const t = String(type).toUpperCase();
-  if (t.includes("MIX")) return "혼합복식";
-  if (t.includes("MALE") || t.includes("MEN")) return "남자복식";
-  if (t.includes("FEMALE") || t.includes("WOMEN")) return "여자복식";
-  if (t === "MD" || t === "M_D") return "남자복식";
-  if (t === "WD" || t === "F_D") return "여자복식";
-  if (t === "XD" || t === "X_D") return "혼합복식";
+  //if (t.includes("MIX")) return "혼합복식";
+  //if (t.includes("MALE") || t.includes("MEN")) return "남자복식";
+  //if (t.includes("FEMALE") || t.includes("WOMEN")) return "여자복식";
+  if (t === "MALE_DOUBLE" || t === "M_D") return "남자복식";
+  if (t === "FEMALE_DOUBLE" || t === "F_D") return "여자복식";
+  if (t === "MIXED_DOUBLE" || t === "X_D") return "혼합복식";
   return type;
 }
 function typeKo(t: string) {
